@@ -1,3 +1,13 @@
+## Laravel Api RestFul
+
+DB SQL: db/database.sql
+
+Api User:
+All: http://localhost/laravelapi/public/api/user
+Show: http://localhost/laravelapi/public/api/user/1
+Create: http://localhost/laravelapi/public/api/user/store
+Update: http://localhost/laravelapi/public/api/user/update
+
 ## Laravel PHP Framework
 
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/version.png)](https://packagist.org/packages/laravel/framework) [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.png)](https://packagist.org/packages/laravel/framework) [![Build Status](https://travis-ci.org/laravel/framework.png)](https://travis-ci.org/laravel/framework) [![License](https://poser.pugx.org/laravel/framework/license.png)](https://packagist.org/packages/laravel/framework)
