@@ -4,9 +4,13 @@ DB SQL: db/database.sql
 
 Api User:
 All: http://localhost/laravelapi/public/api/user
+
 Show: http://localhost/laravelapi/public/api/user/1
+
 Create: http://localhost/laravelapi/public/api/user/store
+
 Update: http://localhost/laravelapi/public/api/user/update
+
 
 ## Laravel PHP Framework
 
