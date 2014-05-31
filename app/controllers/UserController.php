@@ -23,9 +23,6 @@ class UserController extends BaseController {
 			$users = User::all();
 		}
 		
-		// Json return
-		//return Response::json(array('items'=>$return));
-		
 		// load the view
 		return View::make('users.index')->with('users', $users);
 	}
@@ -153,7 +150,7 @@ class UserController extends BaseController {
 		
 		// process
 		if ($validator->fails()) {
-			return Redirect::to('accounts/' . $id . '/edit')->withErrors($validator)->withInput($inputs);
+			return Redirect::to('users/' . $id . '/edit')->withErrors($validator)->withInput($inputs);
 		} else {
 			// store
 			$mUser = User::where('id', '=', $id)->first();
