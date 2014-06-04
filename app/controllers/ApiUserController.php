@@ -119,7 +119,7 @@ class ApiUserController extends BaseController {
 			return Response::json(['return' => false]);
 		} else {
 			// store
-			$mUser = User::where('id', '=', $id)->first();
+			$mUser = User::find($id);
 			$mUser->name    = Input::get('name');
 			$mUser->gender  = Input::get('gender');
 			$mUser->company = Input::get('company');
@@ -142,7 +142,7 @@ class ApiUserController extends BaseController {
 	public function destroy($id)
 	{
 		// Find
-		$mUser = User::where('id', '=', $id)->first();
+		$mUser = User::find($id);
 		
 		// delete
 		if(!empty($mUser)){
