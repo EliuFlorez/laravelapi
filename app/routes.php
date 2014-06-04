@@ -17,9 +17,9 @@ Route::get('/', function()
 });
 
 // Users
-Route::resource('users', 'UserController');
+Route::resource('users', 'UsersController');
 
 Route::group(array('prefix' => 'api'), function()
 {
-    Route::resource('user', 'ApiUserController');
+    Route::resource('user', 'ApiUsersController');
 });
