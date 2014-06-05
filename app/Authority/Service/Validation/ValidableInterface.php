@@ -5,7 +5,7 @@ interface ValidableInterface {
 	/**
 	 * Add data to validate against
 	 * @param  array  $input 
-	 * @return \Service\Validation\ValidableInterface $this
+	 * @return \Authority\Service\Validation\ValidableInterface $this
 	 */
 	public function with(array $input);
 

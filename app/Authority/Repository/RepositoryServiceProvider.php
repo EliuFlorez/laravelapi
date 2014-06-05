@@ -1,12 +1,10 @@
 <?php namespace Authority\Repository;
 
 use Illuminate\Support\ServiceProvider;
-use Authority\Repository\Session\SentrySession;
 use Authority\Repository\User\SentryUser;
-use Authority\Repository\Group\SentryGroup;
 use Cartalyst\Sentry\Sentry;
 
-class RepoServiceProvider extends ServiceProvider {
+class RepositoryServiceProvider extends ServiceProvider {
 
 	/**
 	 * Register the binding

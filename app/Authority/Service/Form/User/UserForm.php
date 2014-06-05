@@ -26,6 +26,11 @@ class UserForm {
 	 */
 	protected $user;
 
+	/**
+	 * Instantiate Construct
+	 *
+	 * @return this
+	 */
 	public function __construct(ValidableInterface $validator, UserInterface $user)
 	{
 		$this->validator = $validator;
@@ -34,6 +39,21 @@ class UserForm {
 
 	/**
      * Create a new user
+     *
+     * @return integer
+     */
+    public function save(array $input)
+    {
+        if(!$this->valid($input))
+        {
+            return false;
+        }
+
+        return $this->user->store($input);
+    }
+	
+	/**
+     * Update a user
      *
      * @return integer
      */

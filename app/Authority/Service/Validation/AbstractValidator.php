@@ -39,6 +39,11 @@ abstract class AbstractValidator implements ValidableInterface {
 	 */
 	protected $messages = array();
 
+	/**
+	 * Instantiate Construct
+	 *
+	 * @return this
+	 */
 	public function __construct(Factory $validator)
 	{
 		$this->validator = $validator;

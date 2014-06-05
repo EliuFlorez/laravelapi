@@ -9,18 +9,22 @@ class UserFormValidator extends AbstractValidator {
 	 *
 	 * @var Array 
 	 */
-	protected $rules = array(
-		'firstName' => 'alpha',
-        'lastName' => 'alpha',
-	);
+	protected $rules = [
+		'name'    => 'required',
+		'gender'  => 'required',
+		'company' => 'required',
+		'email'   => 'required|email',
+		'phone'   => 'required|numeric',
+		'address' => 'required'
+	];
 
 	/**
 	 * Custom Validation Messages
 	 *
 	 * @var Array 
 	 */
-	protected $messages = array(
+	protected $messages = [
 		//'email.required' => 'An email address is required.'
-	);
+	];
 	
 }
